@@ -85,16 +85,16 @@
                 <div class="section-acc-text">
                     <h1>BIENVENUE SUR MON PORTFOLIO !</h1>
                     <p>
-                        Ce portfolio a pour objectif de vous présenter mon parcours et les compétences que j'ai pu
+                        Ce portfolio a pour objectif de vous présenter mon parcours de développeur et les compétences que j'ai pu
                         acquérir
                         durant mon BTS, mais aussi parler de mon parcours professionnel.
                         <br>
                     </p>
                     <h2>Bonne lecture !</h2>
                 </div>
-                <div class="section-acc-img">
+                <!-- <div class="section-acc-img">
                     <img src="" alt="IMG TROP COOL">
-                </div>
+                </div> -->
             </section>
             <div class="bg-grey">
                 <section class="main-section section-parcours" id="parcours">
@@ -157,7 +157,7 @@
                         <span>
                             SQL
                         </span>
-                        <img src="./assets/img/SQL.png" alt="SQL">
+                        <img src="./assets/img/MYSQL.png" alt="MYSQL">
                     </div>
                 </div>
                 <div class="comp-text">
@@ -217,12 +217,12 @@
                         </span>
                         <img src="./assets/img/POSTMAN.png" alt="POSTMAN">
                     </div>
-                    <div class="lang-card">
+                    <!-- <div class="lang-card">
                         <span>
                             INSOMNIA
                         </span>
                         <img src="./assets/img/INSOMNIA.png" alt="INSOMNIA">
-                    </div>
+                    </div> -->
                     <div class="lang-card">
                         <span>
                             WIRESHARK
@@ -250,7 +250,7 @@
                                 <h2>Pokédex en Javascript via une API</h2>
                                 <p>Réalisation d'un pokédex en javascript à l'aide l'API PokéAPI</p>
                             </div>
-                                <div class="img-projets-container" id="img-container-1">
+                                <div class="projets-img-container" id="img-container-1">
                                     <img src="" alt="image stage stime 1" class="projets-img">
                                     <img src="" alt="image stage stime 2" class="projets-img">
                                     <img src="" alt="image stage stime 3" class="projets-img">
@@ -265,7 +265,7 @@
                                 <p>Réalisation d'une interface affichant la météo en fonction de la ville inscrite par
                                     l'utilisateur grâce à l'API de OpenWeather.</p>
                             </div>
-                                <div class="img-projets-container" id="img-container-2">
+                                <div class="projets-img-container" id="img-container-2">
                                     <img src="" alt="image stage stime 1" class="projets-img">
                                     <img src="" alt="image stage stime 2" class="projets-img">
                                     <img src="" alt="image stage stime 3" class="projets-img">
@@ -280,7 +280,7 @@
                                 <p>Réalisation d'une librairie en ligne avec l'api Google Books en php et SQL, pour
                                     avoir compte utilisateur avec page de login/register/profil.</p>
                             </div>
-                                <div class="img-projets-container" id="img-container-3">
+                                <div class="projets-img-container" id="img-container-3">
                                     <img src="" alt="image stage stime 1" class="projets-img">
                                     <img src="" alt="image stage stime 2" class="projets-img">
                                     <img src="" alt="image stage stime 3" class="projets-img">
@@ -296,11 +296,17 @@
                                 <p>Réalisation d'un site web vitrine en PHP pour le lancement de leurs nouvelles gammes de
                                     produits</p>            
                             </div>
-                                <div class="img-projets-container" id="img-container-4">
-                                    <img src="" alt="image stage stime 1" class="projets-img">
-                                    <img src="" alt="image stage stime 2" class="projets-img">
-                                    <img src="" alt="image stage stime 3" class="projets-img">
-                                </div>
+                                <div class="projets-img-container" id="img-container-4">
+                                    <div class="projets-img-hover">
+                                        <img src="./assets/img/stage/stage_natura_konjac (1).png" alt="image stage Natura Konjac 1" class="projets-img">
+                                    </div>
+                                    <div class="projets-img-hover">
+                                        <img src="./assets/img/stage/stage_natura_konjac (2).png" alt="image stage Natura Konjac 2" class="projets-img">
+                                    </div>
+                                    <div class="projets-img-hover">
+                                        <img src="./assets/img/stage/stage_natura_konjac (3).png" alt="image stage Natura Konjac 3" class="projets-img">
+                                    </div>
+                            </div>
                                 <button class="roll-down" data-target="img-container-4">
                                     v
                                 </button>
@@ -313,7 +319,7 @@
                                         Documentation, manipulation de l'outil OASIS, tout en mode Agile. 
                                     </p>
                                 </div>
-                                <div class="img-projets-container" id="img-container-5">
+                                <div class="projets-img-container" id="img-container-5">
                                     <img src="" alt="image stage stime 1" class="projets-img">
                                     <img src="" alt="image stage stime 2" class="projets-img">
                                     <img src="" alt="image stage stime 3" class="projets-img">
@@ -364,8 +370,8 @@
                     <h1>CONTACT</h1>
                         <div class="contact-container">
                             <h2>Email de contact :</h2>
-                            <h2> example@example.org</h2>
-                            <a href="mailto:example@example.org" class="email btn-hover">Envoyez un Email</a>
+                            <h2> nicolasbrandcontact@outlook.com</h2>
+                            <a href="mailto:nicolasbrandcontact@outlook.com" class="email btn-hover">Envoyez un Email</a>
                         </div>
                 </section>
             </div>
@@ -379,6 +385,11 @@
             <li class="footer-content"><a href="#">Mentions Légales</a></li>
         </ul>
     </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="imgFull">
+    </div>
 
 </body>
 

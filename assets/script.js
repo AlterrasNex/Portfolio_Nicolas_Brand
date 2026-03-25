@@ -48,3 +48,30 @@ navChoices.forEach(navChoice => {
   
 });
 
+
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("imgFull");
+const closeBtn = document.querySelector(".close");
+
+// On cible toutes les images de ton portfolio (ajuste le sélecteur si besoin)
+document.querySelectorAll('.projets-img-hover img').forEach(img => {
+  img.onclick = function() {
+    modal.style.display = "flex"; // On affiche la modale
+    modalImg.src = this.src;      // On prend la source de l'image cliquée
+    document.body.classList.add("no-scroll"); // On bloque le scroll
+  }
+});
+
+// Fermer au clic sur le "X"
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+  document.body.classList.remove("no-scroll"); // On réactive le scroll
+}
+
+// Optionnel : Fermer aussi en cliquant n'importe où sur le fond gris
+modal.onclick = function(e) {
+  if (e.target === modal) {
+    modal.style.display = "none";
+    document.body.classList.remove("no-scroll");
+  }
+}
