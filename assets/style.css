@@ -394,10 +394,19 @@ main {
 
 .veilles-container {
     margin: 0 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .veilles-content {
-
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     gap: 2rem;
 }
 
 .veille-img {
